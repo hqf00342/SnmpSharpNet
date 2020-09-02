@@ -181,14 +181,14 @@ namespace SnmpSharpNet
 					IPEndPoint remEP = remote as IPEndPoint;
 					if ( ! _noSourceCheck && ! remEP.Equals(netPeer))
 					{
-                        if (remEP.Address != netPeer.Address)
-                        {
-                            Console.WriteLine("Address miss-match {0} != {1}", remEP.Address, netPeer.Address);
-                        }
-                        if (remEP.Port != netPeer.Port)
-                        {
-                            Console.WriteLine("Port # miss-match {0} != {1}", remEP.Port, netPeer.Port);
-                        }
+                        //if (remEP.Address != netPeer.Address)
+                        //{
+                        //    Console.WriteLine("Address miss-match {0} != {1}", remEP.Address, netPeer.Address);
+                        //}
+                        //if (remEP.Port != netPeer.Port)
+                        //{
+                        //    Console.WriteLine("Port # miss-match {0} != {1}", remEP.Port, netPeer.Port);
+                        //}
 						/* Not good, we got a response from somebody other then who we requested a response from */
 						retry++;
 						if (retry > retries)
